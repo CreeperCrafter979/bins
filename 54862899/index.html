@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Trash Music Creator</title>
+    <meta name="description" content="Trash Music Creator">
+  <style id="jsbin-css">
+* {
+  font-family: sans-serif;
+}
+</style>
+</head>
+  <body>
+    <p>Trash Music Creator</p>
+  <!--boot js--><script id="jsbin-javascript" defer>// console.clear()
+
+//https://marcgg.com/blog/2016/11/01/javascript-audio/
+
+//Create audio context
+var aCtx = new AudioContext();
+
+//Create note object
+function Note(freq, time, dur, type) {
+  if(freq == null) freq = 440;
+  if(time == null) time = 0;
+  if(dur == null) dur = 1;
+  if(type == null) type = "sawtooth";
+  this.freq = freq;
+  this.time = time;
+  this.dur = dur;
+  this.type = type;
+}
+</script>
+</body>
+</html>
